@@ -247,7 +247,7 @@ sub new {
             $self->_setup_mswin();
         }
         else {
-            $self->{tar} = which('tar') || which('gtar');
+            $self->{tar} = which('gtar') || which('tar');
         }
 
         unless ( defined $self->{tar} ) {
